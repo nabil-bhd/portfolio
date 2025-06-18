@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nabil Benhadi</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/dark.svg" media="(prefers-color-scheme: dark)">
 </head>
 <body>
     <!-- Header -->
@@ -32,152 +34,59 @@
         <div id="article-heading-block">
             <div class="tag-row">
                 <span class="tag">Blockpulse</span>
-                <span class="tag">Sector</span>
-                <span class="tag">Role</span>
-                <span class="tag">Year</span>
+                <span class="tag">Fintech</span>
+                <span class="tag">Product Designer</span>
+                <span class="tag">Visual Designer</span>
+                <span class="tag">2019</span>
+                <span class="tag">Brussels & Paris</span>
             </div>
             <h1 class="headline-lg">Redesigning a Blockchain-Based Fundraising Platform for SMEs and Investors</h1>
+            <img id="article-hero" src="assets/case-studies/blockpulse/hero.png">
         </div>
 
         <div id="article-content">
-            <h2>Overview</h2>
-                <p>This case study outlines the redesign of a blockchain-powered fundraising platform aimed at helping SMEs raise capital and allowing investors to discover and fund high-potential businesses completely digitally. The redesign focused on improving brand awareness, onboarding, usability, and overall user experience to raise platform adoption and engagement.</p>
+                <p><strong>This case study outlines the redesign of a blockchain-powered fundraising platform aimed at helping SMEs raise capital and allowing investors to discover and fund high-potential businesses completely digitally. The redesign focused on improving brand awareness, onboarding, usability, and overall user experience to raise platform adoption and engagement.</strong></p>
                 <!-- <img src="assets/pictures/aurora.jpg" alt="image.png"> -->
                 <hr>
-            <h2>Problem Definition</h2>
+            <h2>The challenge</h2>
                 <p>Despite a strong technological foundation and the growing relevance of blockchain in fundraising, the platform was struggling with:</p>
                 <ul>
-                    <li>Low product/brand awareness</strong> among potential SME clients and investors.</li>
-                    <li>Low conversion rates</strong> on the marketing website (from visit to sign-up).</li>
-                    <li>High user drop-off rates</strong> during onboarding and campaign creation.</li>
-                    <li>Usability issues</strong> throughout the core product (e.g., fund-raising setup, investment flows).</li>
-                    <li>Limited active users (MAUs)</strong> despite sign-ups, indicating poor retention and value delivery.</li>
+                    <li><strong>Low product/brand awareness</strong> among potential SME clients and investors.</li>
+                    <li><strong>Low conversion rates</strong> on the marketing website.</li>
+                    <li><strong>High user drop-off rates</strong> during onboarding and campaign creation.</li>
+                    <li><strong>Usability issues</strong> throughout the core product such as campaign setup and investment flows.</li>
+                    <li><strong>Limited active users (MAUs)</strong> despite sign-ups, indicating poor retention.</li>
                 </ul>
                 <hr>
             <h2>Objectives</h2>
-                <h3>Primary Goals</h3>
+                <h3>Primary goals</h3>
                     <ul>
-                        <li>Increase Monthly Active Users (MAUs)</strong> by 40% in 6 months.</li>
-                        <li>Improve conversion rate</strong> on the marketing site by 50%.</li>
-                        <li>Improve usability and task success rate</strong> on key user flows (onboarding, investment, campaign creation).</li>
+                        <li><strong>Increase monthly active users (MAUs)</strong> by 40% in 6 months.</li>
+                        <li><strong>Improve conversion rate</strong> on the marketing site by 50%.</li>
+                        <li><strong>Improve usability and task success rate</strong> on key user flows (onboarding, investment, campaign creation).</li>
                     </ul>
-                <h3>Secondary Goals</h3>
+                <h3>Secondary goals</h3>
                     <ul>
-                        <li>Clarify brand positioning and messaging to attract high-quality leads. Why should investors and founders trust blockpulse?</li>
+                        <li>Clarify brand positioning and messaging to attract investors and founders.</li>
+                        <li>Reimagine and visual identity to appear more confident and trustworthy.</li>
                         <li>Build trust in blockchain-backed transactions via better UX and communication.</li>
-                        <li>Improve mobile accessibility</strong> for better reach in emerging markets.</li>
                     </ul>
-                <hr>
-            <h2>Target Users</h2>
-                <ul>
-                    <li>Small and Medium Enterprises (SMEs):</strong> Seeking non-traditional, faster capital raising methods.</li>
-                    <li>Retail &amp; Institutional Investors:</strong> Looking for vetted investment opportunities in early-stage and growth businesses, with secure and transparent transactions.</li>
-                </ul>
             <hr>
-            <h2>Research &amp; Discovery</h2>
-                <h3>1. Stakeholder Interviews</h3>
-                    <p>Uncovered business goals and friction points such as:</p>
-                    <ul>
-                        <li>Low confidence in user journey for both SMEs and investors.</li>
-                        <li>Unclear value proposition and inconsistent messaging on the marketing site.</li>
-                    </ul>
-                <h3>2. User Interviews &amp; Surveys</h3>
-                    <p>Insights from 20 users (10 SMEs, 10 investors) revealed:</p>
-                    <ul>
-                        <li>Confusion around blockchain benefits.</li>
-                        <li>Overwhelming jargon and poor onboarding.</li>
-                        <li>Lack of guidance in setting up fundraising campaigns or making first investments.</li>
-                    </ul>
-                <h3>3. Heuristic Evaluation &amp; UX Audit</h3>
-                    <p>Findings included:</p>
-                    <ul>
-                        <li>Poor information hierarchy &amp; architecture.</li>
-                        <li>Broken navigation logic.</li>
-                        <li>Lack of feedback on transactional actions.</li>
-                        <li>Inconsistent UI components.</li>
-                    </ul>
-                <hr>
-            <h2>Design Strategy</h2>
-                <h3>Brand and Marketing Site Revamp</h3>
-                    <ul>
-                        <li><strong>New Brand Identity:</strong> Created a visual and messaging system centered on trust, transparency, and growth.</li>
-                        <li><strong>Homepage Redesign:</strong> Clear value proposition, targeted CTAs for SMEs and investors.</li>
-                        <li><strong>Content Strategy:</strong> Educational content and interactive explainers on how blockchain enhances fundraising.</li>
-                    </ul>
-                <h3>Platform UX Overhaul</h3>
-                    <h4>Key user journeys improved:</h4>
-                    <p>a. <strong>SME Campaign Creation Flow</strong></p>
-                        <ul>
-                            <li>Introduced a <strong>wizard-style setup</strong> for campaigns.</li>
-                            <li>Contextual tips, progress indicators, and smart defaults.</li>
-                            <li>Real-time previews and success estimates.</li>
-                        </ul>
-                    <p>b. <strong>Investor Discovery &amp; Investment Flow</strong></p>
-                        <ul>
-                            <li>Added <strong>personalised recommendations</strong>, filters, and risk levels.</li>
-                            <li>Streamlined wallet setup and KYC verification.</li>
-                            <li>Transparent milestone-based funding visuals.</li>
-                        </ul>
-                <h3 id="-mobile-optimisation-">Mobile Optimisation</h3>
+            <h2 id="-results-">Impact</h2>
+                <p>After three months:</p>
                 <ul>
-                <li>Responsive design overhaul for all core flows.</li>
-                <li>Introduced a lightweight progressive web app (PWA) to ensure accessibility without requiring a native download.</li>
+                    <li><strong>MAUs increased by 81% </strong>, from approx. 2,100 to 3,800.</li>
+                    <li><strong>Conversion rate increased by 75%</strong>, from 1,2% to 2,1%</li>
+                    <li><strong>Onboarding completion rate saw an average increase of 89%</strong>, from 38% to 72%</li>
+                    <li><strong>Bounce rate on marketing site decreased by 38%</strong>, from 68% to 42%</li>
                 </ul>
-                <h3 id="-onboarding-help-systems-">Onboarding &amp; Help Systems</h3>
-                <ul>
-                <li>Contextual walkthroughs.</li>
-                <li>Embedded support via live chat and smart FAQs.</li>
-                <li>Gamified onboarding checklist (e.g., &quot;Complete your first investment, earn bonus tokens&quot;).</li>
-                </ul>
-                <hr>
-            <h2 id="-prototyping-testing-">Prototyping &amp; Testing</h2>
-                <ul>
-                    <li><strong>Mid-fi and Hi-fi prototypes</strong> tested with 10 returning and 10 new users.</li>
-                    <li>Conducted <strong>usability testing</strong> on:
-                        <ul>
-                            <li>Campaign creation.</li>
-                            <li>Investor browsing/investment.</li>
-                            <li>Wallet connection and DKYC.</li>
-                        </ul>
-                    </li>
-                    <li>Used <strong>heatmaps</strong> and <strong>session recordings</strong> on new site design.</li>
-                </ul>
-                <h3 id="-key-metrics-from-testing-">Key Metrics from Testing</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th><strong>Task</strong></th>
-                            <th><strong>Pre-redesign Success Rate</strong></th>
-                            <th><strong>Post-redesign Success Rate</strong></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>SME Campaign Setup</td>
-                            <td>45%</td>
-                            <td>88%</td>
-                        </tr>
-                        <tr>
-                            <td>Investor First Investment Flow</td>
-                            <td>50%</td>
-                            <td>92%</td>
-                        </tr>
-                        <tr>
-                            <td>Wallet Setup &amp; DKYC Completion</td>
-                            <td>48%</td>
-                            <td>85%</td>
-                        </tr>
-                    </tbody>
-                </table>
-            <hr>
-            <h2 id="-results-">Results</h2>
-                <table>
+              <!--   <table>
                     <thead>
                         <tr>
                             <th><strong>Metric</strong></th>
                             <th><strong>Before</strong></th>
                             <th><strong>After 3 Months</strong></th>
-                            <th><strong>Δ Change</strong></th>
+                            <th><strong>Relative</strong></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -206,21 +115,148 @@
                             <td>-38%</td>
                         </tr>
                     </tbody>
-                </table>
+                </table> -->
             <hr>
-            <h2 id="-design-system-implementation-">Design System &amp; Implementation</h2>
+            <h2>Target users</h2>
+                <p>We needed to figure out who this was for in order to test with and design for the right user.</p>
                 <ul>
-                    <li>Introduced a <strong>modular design system</strong> (tokens, components, patterns) for scalability.</li>
-                    <li>Used <strong>Figma</strong> for design, with <strong>Storybook</strong> for component documentation.</li>
-                    <li>Collaborated with devs in weekly <strong>design QA loops</strong> to ensure pixel-perfect handoffs.</li>
+                    <li><strong>Small and Medium Enterprises (start-up & scale-up) founders:</strong> Seeking non-traditional, fast capital raising methods.</li>
+                    <li><strong>Investors:</strong> Looking for vetted investment opportunities in early-stage and growth businesses.</li>
                 </ul>
+                <p>Blockpulse was itself in an incubator environment, making it easy to find the right participants for interviews and testing.</p>
             <hr>
-            <h2 id="-lessons-learned-">Lessons Learned</h2>
+            <h2>Research &amp; Discovery</h2>
+                <h3>1. Stakeholder interviews</h3>
+                    <p>Uncovered business goals and friction points such as:</p>
+                    <ul>
+                        <li>Low confidence in user journey for both SMEs and investors.</li>
+                        <li>Unclear value proposition and inconsistent messaging on the marketing site.</li>
+                    </ul>
+                <h3>2. User interviews &amp; surveys</h3>
+                    <p>Insights from 20 users (10 founders, 10 investors) revealed:</p>
+                    <ul>
+                        <li>Confusion around blockchain and its benefits.</li>
+                        <li>Overwhelming jargon and poor onboarding.</li>
+                        <li>Lack of guidance in setting up fundraising campaigns or making first investments.</li>
+                    </ul>
+            <hr>
+            <h2>Prototyping &amp; Testing</h2>
+            <ul>
+                <li><strong>Mid-fi prototypes</strong> tested with 10 returning and 10 new users.</li>
+                <li>Conducted <strong>usability testing</strong> on:
+                    <ul>
+                        <li>Campaign creation.</li>
+                        <li>Investor browsing/investment.</li>
+                        <li>Wallet setup and digital KYC.</li>
+                    </ul>
+                </li>
+                <li>Used <strong>heatmaps</strong> and <strong>session recordings</strong> on new site design.</li>
+            </ul>
+            <img class="break-img" src="assets/case-studies/blockpulse/prototype.png">
+            <h3 id="-key-metrics-from-testing-">Results from Testing</h3>
+                <p>The success rates of:</p>
                 <ul>
-                    <li>Clear educational UI is essential when introducing blockchain tech to non-tech-savvy users.</li>
+                    <li>Campaign creation flow improved by 95%.</li>
+                    <li>Investor investment flow improved by 84%.</li>
+                    <li>Wallet setup & KYC completion flow improved by 77%.</li>
+                </ul>
+            <!-- <table>
+                <thead>
+                    <tr>
+                        <th><strong>Task</strong></th>
+                        <th><strong>Pre-redesign Success Rate</strong></th>
+                        <th><strong>Post-redesign Success Rate</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SME Campaign Setup</td>
+                        <td>45%</td>
+                        <td>88%</td>
+                    </tr>
+                    <tr>
+                        <td>Investor First Investment Flow</td>
+                        <td>50%</td>
+                        <td>92%</td>
+                    </tr>
+                    <tr>
+                        <td>Wallet Setup &amp; KYC Completion</td>
+                        <td>48%</td>
+                        <td>85%</td>
+                    </tr>
+                </tbody>
+            </table> -->
+            <hr>
+            <h2>Design outcome</h2>
+                <h3>Brand and marketing site revamp</h3>
+                    <ul>
+                        <li><strong>New brand identity:</strong>  Inspires trust, transparency, and growth.</li>
+                        <li><strong>Homepage:</strong> focused value proposition, clear primary CTAs, and testimonials.</li>
+                        <li><strong>Content:</strong> Educational articles on how blockchain enhances fundraising, legal instruments, etc.</li>
+                    </ul>
+                    <div class="break-img">
+                        <img src="assets/case-studies/blockpulse/hero.png">
+                        <img src="assets/case-studies/blockpulse/educational.png">
+                        <img src="assets/case-studies/blockpulse/logo.png">
+                        <img src="assets/case-studies/blockpulse/logo-2.png">
+                        <img src="assets/case-studies/blockpulse/palette.png">
+                    </div>
+                    
+                    <p class="note"><small>Figure 1–5 — Marketing site & Branding showcase</small></p>
+                    
+                <h3>Platform redesign</h3>
+                    <p>Here are a few examples of key areas of improvement:</p>
+                    
+                        <h4><strong>Better overview on the landing page</strong></h4>
+                            <ul>
+                                <li>Key information is visible at a glance.</li>
+                                <li>Core, most common tasks were made more prominent.</li>
+                                <li>Better status overview of investors within cap table.</li>
+                            </ul>
+                        <div class="break-img">
+                            <img src="assets/case-studies/blockpulse/landing.png">
+                            <img src="assets/case-studies/blockpulse/landing-2.png">
+                        </div>
+                        <p class="note"><small>Figure 2–3 — Dashboard</small></p>
+                        
+                        <p><strong>Campaign creation flow</strong></p>
+                            <ul>
+                                <li>Introduced a guided, <strong>wizard-style setup</strong> for campaigns.</li>
+                                <li>Contextual tips, progress indicators, and smart defaults.</li>
+                            </ul>
+                        <div class="break-img">
+                            <img src="assets/case-studies/blockpulse/campaign.png">
+                            <img src="assets/case-studies/blockpulse/campaign-2.png">
+                        </div>
+                        <p class="note"><small>Figure 4–5 — Campaign creation flow steps</small></p>
+                        
+                        <p><strong>Investor browsing &amp; investment flow</strong></p>
+                            <ul>
+                                <li>Added <strong>personalised recommendations</strong>, filters, and risk levels.</li>
+                                <li>Streamlined wallet setup and "Know Your Customer" (KYC) verification.</li>
+                                <li>Transparent milestone-based funding visuals.</li>
+                            </ul><!-- 
+                        <img class="break-img" src="assets/case-studies/blockpulse/hero.png"> -->
+                    
+                <h3>Responsive design</h3>
+                    <p>The largest portion of users were using the platform on desktop, which remained the priority. However, a non-negligeable part of the userbase used the product on their mobile phones. The PWA was optimised to be responsive and work on any display as a result. </p>
+
+                    <img class="break-img" src="assets/case-studies/blockpulse/responsive.png">
+               <!--  <h3>Onboarding &amp; Help Systems</h3>
+                    <ul>
+                        <li>Contextual walkthroughs.</li>
+                        <li>Embedded support via personified live chat and smart FAQs.</li>
+                    </ul> -->
+            <hr>
+            <h2>Collaboration &amp; Implementation</h2>
+                <p><strong>I collaborated closely with engineers</strong> to ensure pixel-perfect, functional results. Together, we built a <strong>strong Design System</strong> (components and patterns) to improve efficiency, scalability, and consistency. </p>
+                <p>We wanted to <strong>avoid waterfall-type handoffs</strong>, and while we did have regular UI QA ceremonies, we relied a lot more on day to day ad-hoc conversations and check-ins. This resulted in rich, multi-disciplinary discussions from which lots of ideas and improvements were born.</p>
+            <hr>
+            <h2>Lessons Learned</h2>
+                <ul>
+                    <li>Clear educational UI is essential when introducing blockchain tech to non-tech-savy users.</li>
                     <li>Trust signals (like third-party audits, testimonials, secure wallet integrations) directly influence conversion.</li>
-                    <li>A modular onboarding strategy—tailored by user role—works better than a generic, one-size-fits-all approach.</li>
-                    <li>Regular user testing post-launch was critical to rapid iteration and performance gains.</li>
+                    <li>Onboarding flows tailored by user role benefited their completion rate immensely.</li>
                 </ul>
         </div>
 
@@ -228,12 +264,12 @@
     </section>
     
 
-    <!-- Contact -->
-    <section id="contact">
+     <!-- Contact -->
+    <section id="contact" style="overflow:hidden;">
         <h2 class="headline-sm">Contact</h2>
-        <p class="headline-lg">I'm always open to new opportunities. Feel free to reach out on <a class="external link" href=mailto:contact@nabilbenhadi.com>contact@nabilbenhadi.com</a>.</p>
+        <p class="headline-lg">I'm always open to new opportunities. Feel free to reach out on <a class="external link" href=mailto:contact@nabilbenhadi.com>contact@nabilbenhadi.com</a></p>
         <p class="headline-sm">Or, you can connect with me on <a class="external link" target="_blank" href="https://www.linkedin.com/in/nabil-bhd">LinkedIn</a> and <a class="external link" target="_blank" href="https://www.instagram.com/nabil.bhd">Instagram</a>.</p>
-        <p class="headline-sm">You can also go through my <a class="external link" target="_blank" href="https://www.instagram.com/nabil.bhd">resume</a>.</p>
+        <p class="headline-sm">You can also go through my <a class="external link" target="_blank" href="files/nb_resume.pdf">resume</a>.</p>
 
         <br />
         

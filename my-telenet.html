@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nabil Benhadi</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/dark.svg" media="(prefers-color-scheme: dark)">
 </head>
 <body>
      <!-- Header -->
@@ -48,11 +50,10 @@
             <h2>Objectives</h2>
                 <ul>
                     <li><strong>Redefine the information architecture</strong> to fit the users’ mental model.</li>
-                    <li><strong>Reduce stress on call centres and shops</strong> by simplifiyng existing features, and adding new ones</li>
+                    <li><strong>Reduce stress on call centres and shops</strong> by improving existing features, and adding new ones</li>
                     <li><strong>Increase engagement</strong> to fit Telenet’s digital-first support strategy.</li>
                     <li><strong>Decrease churn rate</strong> after following a critical business incident.</li>
                 </ul>
-            <img class="break-img" src="assets/thumbnails/my-telenet.png">
             <h2>Responsibilities</h2>
                 <ul>
                     <li>UX & UI Design</li>
@@ -69,7 +70,7 @@
                     <li>App store ratings went up from <strong>3.8 to 4.3</strong></li>
                 </ul>
             <hr>
-            <h2>The work</h2>
+            <h2>Research & Discovery</h2>
                 <h3>Who is this for?</h3>
                     <p>To better understand user needs and behaviour, we base ourselves on 5 user segments. This helps us link the right solutions and gain a clearer understanding of end users.</p>
                     <ul>
@@ -79,7 +80,18 @@
                         <li><strong>25%</strong> seniors & mediors between 45 and 60</li>
                         <li><strong>14%</strong> seniors over 60</li>
                     </ul>
-                    <p>This fairly broad and balanced distribution made it clear that we needed all journeys be usable and easily understandable by people with low understanding of digital products. Leading us to favour abundantly explicit and plain language, simple patterns, low cognitive load, and high contrast.</p>
+                    <p>This <strong>broad and balanced distribution</strong> made it clear that we needed all journeys be usable and easily understandable by people with low understanding of digital products. Leading us to favour abundantly explicit and plain language, simple patterns, low cognitive load, and high contrast.</p>
+                <hr>
+                <h3>Heuristic evaluation</h3>
+                    <p>Conducted a heuristic evaluation with four evaluators (including myself) to identify major usabibility issues. Findings included:</p>
+                    <ul>
+                        <li>Poor information hierarchy &amp; architecture.</li>
+                        <li>Broken navigation logic.</li>
+                        <li>Lack of <a title="Nielsen Norman Group: Reset and Cancel Buttons" class="external link" href="https://www.nngroup.com/articles/reset-and-cancel-buttons/">control</a> and feedback on transactional actions.</li>
+                        <li>Inconsistent UI components.</li>
+                        <li>Unique, untested patterns that violated <a class="external link" href="https://lawsofux.com/jakobs-law/">Jakobs' law</a>.</li>
+                    </ul>
+                <hr>
                 <h3>Matching users’ mental model: finding the right information architecture</h3>
                     <p>We started by listing tasks a users can (or should be able to) perform on our digital platforms in no particular order of priority. We then conducted a card sorting exercise, giving us an idea of a what our IA should look like.</p>
                     <img class="inline-img" src="assets/case-studies/my-telenet/card-sort.png">
@@ -87,29 +99,54 @@
                     <p>We formed a hypothetical IA, conducted tree testing, and fine-tuned it until we reached a satisfactory success rate of 80%. </p>
                     <img class="inline-img" src="assets/case-studies/my-telenet/tree-structure.png">
                     <p class="note"><small>Figure 3 — Preview of the new tree structure</small></p>
-                <h3>Validation</h3>
-                    <p>After finding the a suitable IA we went ahead and started shaping early concepts/wireframes into prototypes for usability testing. We framed them to test high priority tasks that would showcase whether the manifestation of the architecture was clear enough to a user.</p>
-                    <img class="break-img" src="assets/case-studies/my-telenet/lofi_testing.png">
-                    <p class="note"><small>Figure 4 — Low fidelity testing prototypes</small></p>
-                <h3>Key insights</h3>
-                    <ul>
-                        <li><strong>Navigating felt intuitive.</strong> During high-fidelity wireframe testing, users did not encounter difficulties navigating and finding solutions for their assigned tasks. Validating the tree structure and first wireframes.</li>
-                        <li><strong>Users think in products and ‘objects’.</strong> What we noticed during user testing, is that most users used a “product first” approach when trying to perform a task. They first navigated to said product, then looked for a way to perform the task itself.</li>
-                        <li><strong>Arbitrary business names didn’t mean anything to users.</strong> User do not understand product names. Leading us to the conclusion that we needed to emphasise product categories and de-emphasise product names (Internet, Mobile, TV, Landline).</li>
-                        <li><strong>The landing page was often skipped entirely.</strong> We noticed a lot of users not making use of the landing page and simply skipping to other areas of the app when asked to perform a task. More often than not, they went to their products page.</li>
-                    </ul>
-                <h3>Planning</h3>
-                    <p>To fit the agile nature of the project, we chose to cut up the redesign into smaller increments (or phases) that could each be release candidates for the end-user, without feeling like a broken experience. The first phase consisted of shaping the navigation to fit the new information architecture, shifting and lifting existing blocks to where they belong. The subsequent phases all consisted of redesigning individual blocks.</p>
-                    <p><strong>Example of more granular improvements</strong></p>
-                    <ul>
-                        <li>Bubbles: when leaving out the “used” or “available” labels, there was a 50-50 split of users thinking the shown value was remaining data vs. used data.</li>
-                        <li>Bars: 92% of users understood that the leading value was used data instead of remaining data.</li>
-                        <li>Users expected the bar to fill up left to right, versus empty out from right to left.</li>
-                    </ul>
-                    <img class="break-img" src="assets/case-studies/my-telenet/bubbles.png">
-                    <p class="note"><small>Figure 5 — Left: old usage visualition; Right: redesigned usage visualisation.</small></p>
+            <hr>
+            <h2>Validation</h2>
+                <p>After finding the a suitable IA we went ahead and started shaping early concepts/wireframes into prototypes for usability testing. We framed them to test high priority tasks that would showcase whether the manifestation of the architecture was clear enough to a user.</p>
+                <img class="break-img" src="assets/case-studies/my-telenet/lofi_testing.png">
+                <p class="note"><small>Figure 4 — Low fidelity testing prototypes</small></p>
+            <h3>Key insights</3>
+                <ul>
+                    <li><strong>Navigating felt intuitive.</strong> During high-fidelity wireframe testing, users did not encounter difficulties navigating and finding solutions for their assigned tasks. Validating the tree structure and first wireframes.</li>
+                    <li><strong>Users think in products and ‘objects’.</strong> What we noticed during user testing, is that most users used a “product first” approach when trying to perform a task. They first navigated to said product, then looked for a way to perform the task itself.</li>
+                    <li><strong>Arbitrary business names didn’t mean anything to users.</strong> User do not understand product names. Leading us to the conclusion that we needed to emphasise product categories and de-emphasise product names (Internet, Mobile, TV, Landline).</li>
+                    <li><strong>The landing page was often skipped entirely.</strong> We noticed a lot of users not making use of the landing page and simply skipping to other areas of the app when asked to perform a task. More often than not, they went to their products page.</li>
+                </ul>
+            <hr>
+            <h2>Planning</h2>
+                <p>To fit the agile nature of the project, we chose to cut up the redesign into smaller increments (or phases) that could each be release candidates for the end-user, without feeling like a broken experience. The first phase consisted of shaping the navigation to fit the new information architecture, shifting and lifting existing blocks to where they belong. The subsequent phases all consisted of redesigning individual blocks.</p>
+                <img class="inline-img" src="assets/case-studies/my-telenet/planning.png">
+                <p class="note"><small>Figure 5 — Incremental releases</small></p>
+                <h3>Example of more granular improvements</h3>
+                <ul>
+                    <li>Bubbles: when leaving out the “used” or “available” labels, there was a 50-50 split of users thinking the shown value was remaining data vs. used data.</li>
+                    <li>Bars: 92% of users understood that the leading value was used data instead of remaining data.</li>
+                    <li>Users expected the bar to fill up left to right, versus empty out from right to left.</li>
+                </ul>
+                <img class="break-img" src="assets/case-studies/my-telenet/bubbles.png">
+                <p class="note"><small>Figure 6 — Left: old usage visualition; Right: redesigned usage visualisation.</small></p>
+            <h3>Collaboration &amp; Implementation</h3>
+                <!-- <p><strong>I collaborated closely with engineers</strong> to ensure pixel-perfect, functional results. Together, we built a <strong>strong Design System</strong> (components and patterns) to improve efficiency, scalability, and consistency. </p> -->
+                <p>We worked in an agile setup to collaborate and deliver efficiently. Our goal was to favor multi-disciplinary discussions over rigid handover processes. This was a challenge to maintain in a company in a company where processes and fragmented ownership reinged king. However, we managed to make a strong case for end-to-end ownership.</p>
+                <p>We were able to deliver high quality work that delivered on the promise with a fast pace, and ended up leading by example.</p>
+                <img class="break-img" src="assets/case-studies/my-telenet/design-system.png">
+                <p class="note"><small>Figure 7 — Examples of mordenised components</small></p>
+                <div class="break-img">
+                    <img src="assets/case-studies/my-telenet/dev-collaboration.png" alt="Collaboration with developers">
+                    <img src="assets/case-studies/my-telenet/dev-collaboration-2.png" alt="Collaboration with developers">
+                    <img src="assets/case-studies/my-telenet/dev-collaboration-3.png" alt="Collaboration with developers">
+                </div>
+                 <p class="note"><small>Figure 8–10 — Examples of detailed designs used for handover</small></p>
             <hr>
             <h2>Showcase</h2>
+                <img class="break-img" src="assets/case-studies/my-telenet/design-tokens.png">
+                <p class="note"><small>Figure 8 — Themes such as dark mode powered by Design Tokens</small></p>
+                <img class="break-img" src="assets/case-studies/my-telenet/products.png">
+                <img class="break-img" src="assets/case-studies/my-telenet/products-2.png">
+                <img class="break-img" src="assets/case-studies/my-telenet/billing.png">
+                <img class="break-img" src="assets/case-studies/my-telenet/billing-2.png">
+                <img class="break-img" src="assets/case-studies/my-telenet/roaming.png">
+                <img class="break-img" src="assets/case-studies/my-telenet/roaming-2.png">
+                <img class="break-img" src="assets/case-studies/my-telenet/entertainment.png">
 
         </div>
 
@@ -117,12 +154,12 @@
     </section>
     
 
-    <!-- Contact -->
-    <section id="contact">
+     <!-- Contact -->
+    <section id="contact" style="overflow:hidden;">
         <h2 class="headline-sm">Contact</h2>
-        <p class="headline-lg">I'm always open to new opportunities. Feel free to reach out on <a class="external link" href=mailto:contact@nabilbenhadi.com>contact@nabilbenhadi.com</a>.</p>
+        <p class="headline-lg">I'm always open to new opportunities. Feel free to reach out on <a class="external link" href=mailto:contact@nabilbenhadi.com>contact@nabilbenhadi.com</a></p>
         <p class="headline-sm">Or, you can connect with me on <a class="external link" target="_blank" href="https://www.linkedin.com/in/nabil-bhd">LinkedIn</a> and <a class="external link" target="_blank" href="https://www.instagram.com/nabil.bhd">Instagram</a>.</p>
-        <p class="headline-sm">You can also go through my <a class="external link" target="_blank" href="https://www.instagram.com/nabil.bhd">resume</a>.</p>
+        <p class="headline-sm">You can also go through my <a class="external link" target="_blank" href="files/nb_resume.pdf">resume</a>.</p>
 
         <br />
         

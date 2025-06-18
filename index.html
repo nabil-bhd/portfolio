@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nabil Benhadi</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/dark.svg" media="(prefers-color-scheme: dark)">
 </head>
 <body>
     <!-- Header -->
-    <section id="header" class="highlighted-section">
+    <section id="header" class="volt">
         <div id="header-row">
-            <div><a alt="Nabil Benhadi logo" class="logo" href="index.html">
-                <svg width="32" height="32" fill="var(--fg-accent)" viewBox="0 0 36 36">
+            <div><a alt="Nabil Benhadi logo" class="logo volt" href="index.html">
+                <svg width="32" height="32" fill="#000" viewBox="0 0 36 36">
                     <path d="M14.4 7.2L14.4 24.3504L2.2248 0L14.4 0L14.4 7.2ZM21.6 7.2C21.6 3.2292 24.8292 0 28.8 0C32.7708 0 36 3.2292 36 7.2C36 11.1708 32.7708 14.4 28.8 14.4L21.6 14.4L21.6 7.2ZM0 11.6496L12.1752 36H0L0 11.6496ZM21.6 36L21.6 21.6H28.8C32.7708 21.6 36 24.8292 36 28.8C36 32.7708 32.7708 36 28.8 36L21.6 36Z"/>
                 </svg>
             </a></div>
-            <div id="menu">
+            <div id="menu" >
                 <div class="body-lg">
                     <a class="menu link" href="index.html#work">Work</a>
                 </div>
@@ -27,10 +29,10 @@
     </section>
     
     <!-- Intro -->
-    <section id="intro" class="highlighted-section">
-        <h1 class="headline-sm">Hey, I'm Nabil</h1>
-        <p class="headline-lg" id="test">I'm a Product Designer with over 7 years of experience. I bring strategic business growth by providing solutions that meet <span class="highlighted">user needs</span>. I design visually striking products and experiences that are rooted in data and research.</p>
-        <p class="headline-sm"><a class="link" href="about-me.html">Learn more about me </a></p>
+    <section id="intro" class="volt">
+        <h1 class="headline-sm">Hey, I'm Nabil.</h1>
+        <p class="headline-lg">I'm a Product Designer with over 7 years of experience. I bring strategic business growth by providing solutions that meet <span class="highlighted">user needs</span>. I design visually striking products and experiences that are rooted in data and research.</p>
+        <p class="headline-sm" ><a class="link" href="about-me.html">Learn more about me </a></p>
     </section>
 
     <!-- Companies -->
@@ -60,23 +62,7 @@
     <section id="work">
         <h2 class="headline-sm">Selected Work</h2>
 
-        <!-- Horizon Northstar -->
-        <a title="Opens in figma.com" class="article" target="_blank" href="articles/article.html">
-            <img class="thumbnail" src="assets/thumbnails/horizon.png">
-            <div class="content">
-                <div class="tag-row">
-                    <span class="tag">Liberty Global</span>
-                    <span class="tag">Telco</span>
-                    <span class="tag">Concept/Visual Designer</span>
-                    <span class="tag">2025</span>
-                </div>
-                <h3 class="headline-sm">Defining the Northstar vision for an aggregator TV platform</h3>
-                <p class="body-lg external link">View project</p>
-                <p class="body-md regular subtle">🔒 Password protected Figma deck</p>
-            </div>
-        </a>
-
-         <!-- My Telenet -->
+        <!-- My Telenet -->
         <a class="article" href="my-telenet.html">
             <img class="thumbnail" src="assets/thumbnails/my-telenet.png">
             <div class="content">
@@ -88,6 +74,37 @@
                 </div>
                 <h3 class="headline-sm">Redesigning a customer zone platform to align with a digital-first business strategy</h3>
                 <p class="body-lg link">View project </p>
+            </div>
+        </a>
+
+        <!-- Blockpulse -->
+        <a class="article" href="blockpulse.html">
+            <img class="thumbnail" src="assets/thumbnails/blockpulse.png">
+            <div class="content">
+                <div class="tag-row">
+                    <span class="tag">Blockpulse</span>
+                    <span class="tag">Fintech</span>
+                    <span class="tag">Product Designer</span>
+                    <span class="tag">2019</span>
+                </div>
+                <h3 class="headline-sm">Redesigning a Blockchain-Based Fundraising Platform for SMEs and Investorse</h3>
+                <p class="body-lg link">View project </p>
+            </div>
+        </a>
+
+        <!-- Horizon Northstar -->
+        <a title="Opens in figma.com" class="article" target="_blank" href="https://www.figma.com/proto/6whRfvQaRgYsUxQExNPT36/Horizon-North-Star-Vision-Prototype?node-id=0-514&t=syo7iiTluc938t2x-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A514">
+            <img class="thumbnail" src="assets/thumbnails/horizon.png">
+            <div class="content">
+                <div class="tag-row">
+                    <span class="tag">Liberty Global</span>
+                    <span class="tag">Telco</span>
+                    <span class="tag">Concept/Visual Designer</span>
+                    <span class="tag">2025</span>
+                </div>
+                <h3 class="headline-sm">Defining the Northstar vision for an aggregator TV platform</h3>
+                <p class="body-lg external link">View project</p>
+                <p class="body-md regular subtle">🔒 Password protected Figma prototype</p>
             </div>
         </a>
 
@@ -107,8 +124,8 @@
         </a>       
 
         <!-- Telenet brand refresh -->
-        <a class="article" href="telenet-brand-refresh.html">
-            <img class="thumbnail" src="assets/thumbnails/my-telenet.png">
+        <!-- <a class="article" href="telenet-brand-refresh.html">
+            <img class="thumbnail" src="assets/thumbnails/telenet-brand.png">
             <div class="content">
                 <div class="tag-row">
                     <span class="tag">Telenet</span>
@@ -119,10 +136,10 @@
                 <h3 class="headline-sm">Refreshing brand's visual identity to optimise output, consistency, and usability of digital touchpoints</h3>
                 <p class="body-lg link">View project </p>
             </div>
-        </a>
+        </a> -->
 
         <!-- Event -->
-        <a class="article" href="evnt.html">
+        <!-- <a class="article" href="evnt.html">
             <img class="thumbnail" src="assets/thumbnails/evnt.png">
             <div class="content">
                 <div class="tag-row">
@@ -134,10 +151,10 @@
                 <h3 class="headline-sm">Designing a social event planner from scratch</h3>
                 <p class="body-lg link">View project </p>
             </div>
-        </a>
+        </a> -->
 
         <!-- Proximus -->
-        <a class="article" href="proximus.html">
+        <!-- <a class="article" href="proximus.html">
             <img class="thumbnail" src="assets/pictures/aurora.jpg">
             <div class="content">
                 <div class="tag-row">
@@ -149,30 +166,28 @@
                 <h3 class="headline-sm">Applying a freshly redesigned component library to a multi-channel digital customer care platform</h3>
                 <p class="body-lg link">View project </p>
             </div>
-        </a>
+        </a> -->
 
-        <!-- Blockpulse -->
-        <a class="article" href="blockpulse.html">
-            <img class="thumbnail" src="assets/thumbnails/blockpulse.png">
+        <!-- UI Showcase -->
+        <!-- <a class="article" href="telenet-brand-refresh.html">
+            <img class="thumbnail" src="assets/thumbnails/evnt.png">
             <div class="content">
                 <div class="tag-row">
-                    <span class="tag">Blockpulse</span>
-                    <span class="tag">Sector</span>
-                    <span class="tag">Role</span>
-                    <span class="tag">Year</span>
+                    <span class="tag">UI Design</span>
+                    <span class="tag">2018–2025</span>
                 </div>
-                <h3 class="headline-sm">Redesigning a Blockchain-Based Fundraising Platform for SMEs and Investorse</h3>
-                <p class="body-lg link">View project </p>
+                <h3 class="headline-sm">Visual Design Showcase</h3>
+                <p class="body-lg link">View projects</p>
             </div>
-        </a>
+        </a> -->
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" style="overflow:hidden;">
         <h2 class="headline-sm">Contact</h2>
-        <p class="headline-lg">I'm always open to new opportunities. Feel free to reach out on <a class="external link" href=mailto:contact@nabilbenhadi.com>contact@nabilbenhadi.com</a>.</p>
+        <p class="headline-lg">I'm always open to new opportunities. Feel free to reach out on <a class="external link" href=mailto:contact@nabilbenhadi.com>contact@nabilbenhadi.com</a></p>
         <p class="headline-sm">Or, you can connect with me on <a class="external link" target="_blank" href="https://www.linkedin.com/in/nabil-bhd">LinkedIn</a> and <a class="external link" target="_blank" href="https://www.instagram.com/nabil.bhd">Instagram</a>.</p>
-        <p class="headline-sm">You can also go through my <a class="external link" target="_blank" href="https://www.instagram.com/nabil.bhd">resume</a>.</p>
+        <p class="headline-sm">You can also go through my <a class="external link" target="_blank" href="files/nb_resume.pdf">resume</a>.</p>
 
         <br />
         
