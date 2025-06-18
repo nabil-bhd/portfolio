@@ -35,7 +35,6 @@
 		vertical-align: baseline;
 	}
 
-
 /* Variables */
 	/* Colours */
 		/* Dark mode */
@@ -47,7 +46,7 @@
 				--fg-default: white;
 				--fg-subtle: rgba(255,255,255,0.64);
 				--fg-accent: #EAFF00;
-				--fg-border: rgba(255,255,255,0.16);
+				--fg-border: rgba(255,255,255,0.12);
 			}}
 
 		/* Light mode */
@@ -59,7 +58,7 @@
 				--fg-default: black;
 				--fg-subtle: rgba(0,0,0,0.64);
 				--fg-accent: #001aff;
-				--fg-border: rgba(0,0,0,0.12);
+				--fg-border: rgba(0,0,0,0.08);
 			}}
 
 	/* Dimensions */
@@ -87,34 +86,34 @@
 				--viewport-hpadding: 6rem;
 				--vgap: 4rem;
 				--factor: 1.25;
-				--radius: 2rem;
+				--radius: 1rem;
 			}}
 
 		/* Tablet */
 			@media (max-width:1100px){ :root{
 				--viewport-vpadding: 4rem;
-				--viewport-hpadding: 2rem;
+				--viewport-hpadding: 4rem;
 				--vgap: 3rem;
 				--factor: 1.2;
-				--radius: 1.5rem;
+				--radius: 1rem;
 			}}
 
 		/* Mobile */
 			@media (max-width:400px){ :root{
-				--viewport-vpadding: 2rem;
+				--viewport-vpadding: 3rem;
 				--viewport-hpadding: 1.5rem;
 				--vgap: 2rem;
 				--factor: 1.125;
-				--radius: 1rem;
+				--radius: .5rem;
 			}}
 
 		/* Small Mobile */
 			@media (max-width:320px){ :root{
-				--viewport-vpadding: 1rem;
+				--viewport-vpadding: 3rem;
 				--viewport-hpadding: 1rem;
 				--vgap: 2rem;
 				--factor: 1.125;
-				--radius: 1rem;
+				--radius: .5rem;
 			}}
 			
 /* Typography */
@@ -207,9 +206,31 @@
 		word-wrap: break-word;
 	}
 
+	.play-pause{
+		min-height: 3rem;
+		min-width: 3rem;;
+		font-size: var(--lg);
+		border-radius: 3rem;
+		outline: none;
+		border:none;
+		position: absolute; bottom:1rem; right:1rem;
+
+		transition: scale .5s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
 	.volt{
 		background-color: #EAFF00;
 		color:#000;
+	}
+	.volt .link, .volt .link:hover{
+		color: #000;
+	}
+	.volt svg{
+		fill:#000;
+	}
+	.volt ::selection{
+		background: white;
+		color: #000;
 	}
 
 
@@ -220,13 +241,11 @@
 
 	body > section{
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: column;
-		justify-content: center;
-		align-content: center;
-
+		align-items: center;
 		padding: var(--viewport-vpadding) var(--viewport-hpadding);
 		gap: var(--vgap);
+		/* border-top: 1px solid var(--fg-border); */
 	}
 
 	body > section > * {
@@ -405,12 +424,12 @@
 				background-color: var(--bg-surface);
 			}
 
-			.article:focus, .logo:focus{
+			.article:focus, .logo:focus, .play-pause:focus{
 				outline: solid 2px var(--fg-accent);
 				scale:1.1;
 			}
 
-			.logo:active, .article:active{
+			.logo:active, .article:active, .play-pause:active{
 				scale:.95;
 			}
 
@@ -471,7 +490,7 @@
 		.avatar{
 			position: relative;
 			width: auto;
-			aspect-ratio: auto;
+			aspect-ratio: 1.618;
 			left: auto; right: auto;
 		}
 
@@ -505,7 +524,12 @@
 			gap:0;
 		}
 
-		#article-content > h2, #article-content > h3, #article-content > h4, #article-content > p, #article-content > ul, #article-content > li, #article-content > table, #article-content > th, #article-content > td, #article-content > hr, .inline-img{
+		#article-content img, #article-content video{
+			border-radius: var(--radius);
+			border: 1px solid var(--fg-border);
+		}
+
+		#article-content > h2, #article-content > h3, #article-content > h4, #article-content > p, #article-content > ul, #article-content > ol, #article-content > li, #article-content > table, #article-content > th, #article-content > td, #article-content > hr, .inline-img{
 			width: 100%;
 			max-width: 720px;
 		}
@@ -516,10 +540,21 @@
 			gap: var(--vgap);
 		}
 
-		#article-content > .break-img, .inline-img{
+		ul, ol{
+			margin-block: 0;
+		}
+
+		/* #article-content > .break-img, .inline-img{
 			border-radius: var(--radius);
-			margin: var(--vgap) 0;
+			margin: calc(var(--vgap)/2) -20px var(--vgap) -20px;
 			width: 100%;
+		} */
+
+		.break-img, .inline-img{
+			display: flex; flex-direction: column; position: relative;
+			width: 100%;
+			gap:1rem;
+			margin: calc(var(--vgap)/2) -20px var(--vgap) -20px;
 		}
 
 		#article-content > h2{
@@ -555,11 +590,6 @@
 			bottom: calc(var(--vgap)*.75);
 			font-style: italic;
 			text-align: center;
-		}
-
-		ul{
-			margin-top: 0;
-			margin-bottom: 0;
 		}
 
 		li{
