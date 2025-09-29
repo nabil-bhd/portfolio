@@ -455,7 +455,7 @@
 	.avatar{
 		border-radius: var(--radius);
 		object-fit: cover;
-		width: 50%;
+		max-width: 50%;
 		aspect-ratio: 1;
 		position: sticky;
 	}
@@ -488,6 +488,7 @@
 		}
 
 		.avatar{
+			max-width: 100%;
 			position: relative;
 			width: auto;
 			aspect-ratio: 1.618;
